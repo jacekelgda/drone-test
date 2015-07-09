@@ -1,10 +1,8 @@
 image: bradrydzewski/base
+
 script:
   - ./.drone/build.sh
-deploy:
-  bash:
-    script:
-      - ./drone/deploy.sh
+
 notify:
   email:
     recipients:
