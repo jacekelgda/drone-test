@@ -1,4 +1,4 @@
-image: bradrydzewski/ubuntu
+image: bradrydzewski/base
 script:
   - ./.drone/build.sh
 deploy:
