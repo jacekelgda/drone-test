@@ -1,4 +1,4 @@
-image: http://my-docker-registry/my-docker-image:version
+image: ubuntu
 script:
   - ./.drone/build.sh
 deploy:
