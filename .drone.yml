@@ -1,4 +1,4 @@
-image: test:1
+image: test:2
 script:
   - echo hello world
   - bash -x .drone/build.sh
