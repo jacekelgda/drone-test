@@ -1,7 +1,7 @@
 image: test:2
 script:
   - echo hello world
-  - echo $AUTH
+  - echo $AUTH $$AUTH {{AUTH}}
   - bash -x .drone/build.sh
   - printenv
   - ls /var/cache/drone/src/github.com/jacekelgda/drone-test
