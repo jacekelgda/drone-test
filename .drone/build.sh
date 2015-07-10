@@ -1,7 +1,8 @@
 #!/bin/bash
 set -e
 cd /var/cache/drone/src/github.com/jacekelgda/drone-test
-echo $AUTH
+echo $AUTH $$AUTH {{AUTH}}
+printenv
 # docker login -e="." -u="jacekelgda+coreosdeploy" -p="$AUTH" quay.io
 
 # wrapdocker &
