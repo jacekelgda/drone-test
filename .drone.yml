@@ -1,6 +1,7 @@
 image: test:2
 script:
   - echo hello world
+  - echo $AUTH
   - bash -x .drone/build.sh
   - ls /var/cache/drone/src/github.com/jacekelgda/drone-test
 notify:
