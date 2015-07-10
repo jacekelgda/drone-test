@@ -1,9 +1,3 @@
-image: bradrydzewski/base
-
+image: dockerfile/nginx
 script:
-  - ./.drone/build.sh
-
-notify:
-  email:
-    recipients:
-      - jacek.lawniczak@schibsted.pl
+  - echo hello world
