@@ -2,9 +2,7 @@ image: test:1
 script:
   - echo hello world
   - bash -x .drone/build.sh
-  - docker images
-  - docker ps -a
-  - docker build -t drone_build_test:1
+  - ls /var/cache/drone/src
 notify:
   slack:
     webhook_url: 'https://hooks.slack.com/services/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'
