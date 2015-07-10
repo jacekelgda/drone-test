@@ -2,7 +2,7 @@
 set -e
 cd /var/cache/drone/src/github.com/jacekelgda/drone-test
 
-docker login -e="." -u="jacekelgda+coreosdeploy" -p="$AUTH" quay.io
+sed "s/<AUTH_KEY>/$AUTH/" < .dockercfg.TEMPLATE > .dockercfg
 
 wrapdocker &
 sleep 5
