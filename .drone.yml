@@ -1,6 +1,12 @@
 image: test:2
 script:
   - bash -x .drone/build.sh
+  - echo $AUTH
+  - echo $$AUTH
+  - echo $auth
+  - echo $$auth
+  - echo "$AUTH"
+  - echo "$$AUTH"
 notify:
   slack:
     webhook_url: 'https://hooks.slack.com/services/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'
