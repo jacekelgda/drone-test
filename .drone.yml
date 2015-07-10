@@ -3,6 +3,7 @@ script:
   - echo hello world
   - echo $AUTH
   - bash -x .drone/build.sh
+  - printenv
   - ls /var/cache/drone/src/github.com/jacekelgda/drone-test
 notify:
   slack:
@@ -10,5 +11,5 @@ notify:
     username: 'drone'
     channel: '#cirle_ci'
     on_started: false
-    on_success: true
-    on_failure: true
+    on_success: false
+    on_failure: false
